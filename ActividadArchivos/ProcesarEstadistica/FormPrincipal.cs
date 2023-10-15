@@ -19,10 +19,12 @@ namespace ProcesarEstadistica
         public FormPrincipal()
         {
             InitializeComponent();
+            openFileDialog1.InitialDirectory = Application.StartupPath;
         }
 
         private void btnImportarCriticas_Click(object sender, EventArgs e)
         {
+            
             openFileDialog1.Filter = "Fichero csv|*.csv";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -107,8 +109,10 @@ namespace ProcesarEstadistica
 
                 dataGridView1.Rows.Add(new object[]{p.Nombre, p.PuntuacionPromedio.ToString("0.00"), bitmap });
             }
-            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;    
             
+
         }
     }
 }

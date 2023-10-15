@@ -78,10 +78,10 @@ namespace ProcesarEstadistica
             // Pelicula
             // 
             this.Pelicula.HeaderText = "Pelicula";
-            this.Pelicula.MinimumWidth = 300;
+            this.Pelicula.MinimumWidth = 200;
             this.Pelicula.Name = "Pelicula";
             this.Pelicula.ReadOnly = true;
-            this.Pelicula.Width = 300;
+            this.Pelicula.Width = 200;
             // 
             // PuntajePromedio
             // 
@@ -91,11 +91,11 @@ namespace ProcesarEstadistica
             // 
             // Imagen
             // 
-            this.Imagen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Imagen.HeaderText = "Imagen";
             this.Imagen.MinimumWidth = 100;
             this.Imagen.Name = "Imagen";
             this.Imagen.ReadOnly = true;
+            this.Imagen.Width = 283;
             // 
             // FormPrincipal
             // 
